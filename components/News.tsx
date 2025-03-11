@@ -1,16 +1,17 @@
 import Image from 'next/image';
 import { Button } from './ui/button';
+import { Link } from '@/i18n/routing';
 
 const News = () => {
   return (
     <section className="bg-black mt-[90vh] relative">
-      <div className="">
+      <div>
         <Image
           src="/beef.png"
           alt="beef"
           width={600}
           height={300}
-          className="absolute w-[35vw] top-[100px] left-0 object-cover aspect-[5/3]"
+          className="absolute w-[35vw] top-[100px] left-0 object-cover aspect-[5/3.3] z-10"
         />
       </div>
       <div className="pl-[40vw] text-white pt-20">
@@ -49,8 +50,12 @@ const News = () => {
           </p>
         </div>
 
-        <Button variant="secondary" className="mt-6 rounded-sm font-bold">
-          もっと読む
+        <Button
+          variant="secondary"
+          className="mt-6 rounded-sm font-bold"
+          asChild
+        >
+          <Link href="/news">もっと読む</Link>
         </Button>
       </div>
     </section>
