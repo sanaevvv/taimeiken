@@ -1,0 +1,11 @@
+{
+  "Navigation": {
+    "home": "Home",
+    "menu": "Menu",
+    "contact": "Contact",
+    "profile": "Profile",
+    "recruit": "Recruit",
+    "license": "License",
+    "news": "News"
+  }
+}
