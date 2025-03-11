@@ -7,7 +7,7 @@ const History = () => {
       <div className="flex max-w-[1100px] mx-auto justify-between h-[500px]">
         <div>
           <Image
-            src="/exterior.jpg"
+            src="/exterior.JPG"
             width={450}
             height={300}
             alt="たいめいけんの外観"
