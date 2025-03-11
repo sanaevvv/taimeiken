@@ -29,8 +29,8 @@ const languageNames = {
   zh: {
     native: '中文',
     english: 'Chinese',
-    flag: '🇨🇳'
-  }
+    flag: '🇨🇳',
+  },
 } as const;
 
 type Locale = (typeof routing.locales)[number];
@@ -46,19 +46,20 @@ export const LanguageSwitcher = () => {
   const switchLanguage = (loc: Locale) => {
     setCurrentLanguage(languageNames[loc as Locale]);
 
-     const newPath = pathname === '/' ? `/${loc}` : `/${loc}${pathname}`;
-      router.replace(newPath);
+    const newPath = pathname === '/' ? `/${loc}` : `/${loc}${pathname}`;
+    router.replace(newPath);
   };
 
   return (
     <DropdownMenu modal={false}>
       <DropdownMenuTrigger>
         <div className="flex items-center gap-2 text-white px-2">
-          <Globe className="h-4 w-4" />
-          <span className="hidden sm:inline-block">
+          <span className="text-xl">
+            {currentLanguage.flag ?? <Globe className="h-4 w-4" />}
+          </span>
+          <span className="hidden sm:inline-block text-sm">
             {currentLanguage.native}
           </span>
-          <span className="inline-block sm:hidden">{currentLanguage.flag}</span>
           <ChevronDown className="h-4 w-4" />
         </div>
       </DropdownMenuTrigger>
@@ -75,7 +76,9 @@ export const LanguageSwitcher = () => {
               onClick={() => router.push(`/${loc}`)}
               variant="ghost"
             >
-              <span>{languageNames[loc as Locale].flag}</span>
+              <span className="text-xl">
+                {languageNames[loc as Locale].flag}
+              </span>
               <span>{languageNames[loc as Locale].native}</span>
             </Button>
 

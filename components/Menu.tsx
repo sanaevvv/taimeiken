@@ -6,9 +6,14 @@ const Menu = () => {
     <section className="bg-black">
       <div className="flex max-w-[1100px] m-auto gap-[6vw] pt-20 h-[800px]">
         <div className="mt-[150px]">
-          <h2 className="text-xl sm:text-6xl font-bold pb-4 tracking-widest text-white">
-            Menu
-          </h2>
+          <div className="flex gap-2">
+            <h2 className="text-xl sm:text-6xl font-bold pb-4 tracking-widest text-white font-serif">
+              Menu
+            </h2>
+            <div className="-mt-3">
+              <Image src="/light.gif" alt="light" width={80} height={60} />
+            </div>
+          </div>
           <div className="space-y-4 text-white">
             <p>
               １階はカジュアルな洋食レストランとして、たいめいけん創業以来の味をお手頃な料金でお楽しみ頂けます。老若男女を問わず、皆様に喜んで頂ける洋食の品々を取り揃えてございます。

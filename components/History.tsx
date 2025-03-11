@@ -14,9 +14,14 @@ const History = () => {
           />
         </div>
         <div className="px-4 text-white -mt-[100px] w-[550px]">
-          <h2 className="text-xl sm:text-6xl font-bold pb-4 tracking-widest text-right">
-            History
-          </h2>
+          <div className="flex gap-2 justify-end">
+            <div className="-mt-3">
+              <Image src="/light.gif" alt="light" width={80} height={60} />
+            </div>
+            <h2 className="text-xl sm:text-6xl font-bold pb-4 tracking-widest text-white font-serif">
+              History
+            </h2>
+          </div>
           <p>
             たいめいけんは、1931年（昭和6年）に茂出木心護によって創業された老舗洋食店です。創業当時の店名は「泰明軒」で、東京都中央区新川でスタートします。茂出木は「西支御料理処
             泰明軒」での修業を経て独立し、その屋号を引き継ぎます。
