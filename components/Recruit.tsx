@@ -1,12 +1,11 @@
 import Image from 'next/image';
-import React from 'react'
 import { Button } from './ui/button';
 
 const Recruit = () => {
   return (
     <section className="bg-black">
-      <div className="flex max-w-[1100px] m-auto gap-[6vw] pt-20 h-[630px] relative">
-        <div className="mt-[150px] w-[500px]">
+      <div className="flex max-w-[1100px] m-auto gap-[6vw] pt-6 h-[630px] relative">
+        <div className="mt-[100px] w-[500px]">
           <div className="flex gap-2">
             <h2 className="text-xl sm:text-6xl font-bold pb-4 tracking-widest text-white font-serif">
               Recruit
@@ -31,7 +30,7 @@ const Recruit = () => {
           alt="Recruit"
           width={500}
           height={600}
-          className="absolute w-[450px] h-[600px] right-0 -top-[100px] z-100 object-cover"
+          className="absolute w-[450px] h-[450px] right-0 z-100 object-cover -top-4"
         />
       </div>
     </section>

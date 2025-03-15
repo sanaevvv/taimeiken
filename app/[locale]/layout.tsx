@@ -2,11 +2,20 @@ import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import { routing } from '@/i18n/routing';
-import Header from '@/components/Header';
-import Hero from '@/components/Hero';
-const inter = Inter({ subsets: ['latin'] });
-import { Inter } from 'next/font/google';
+import { Open_Sans, Inter } from 'next/font/google';
 import Footer from '@/components/Footer';
+import Header from '@/components/Header';
+
+const inter = Inter({
+  subsets: ['latin'],
+  display: 'swap',
+});
+
+const openSans = Open_Sans({
+  subsets: ['latin'],
+  weight: ['400', '500', '700'],
+  display: 'swap',
+});
 
 export default async function LocaleLayout({
   children,
@@ -26,13 +35,16 @@ export default async function LocaleLayout({
   const messages = await getMessages();
 
   return (
-    <html lang={locale}>
-      <body className={`${inter.className} bg-black`}>
+    <html lang={locale} className="h-full scroll-smooth">
+      <body
+        className={`${inter.className} ${openSans.className} bg-black min-h-screen flex flex-col text-white`}
+      >
         <NextIntlClientProvider messages={messages}>
-          <Hero />
-          <Header />
-          {children}
-          <Footer />
+          <div className="flex flex-col min-h-screen">
+            <Header />
+            <main className="flex-1">{children}</main>
+            <Footer />
+          </div>
         </NextIntlClientProvider>
       </body>
     </html>
