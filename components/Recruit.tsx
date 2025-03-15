@@ -26,11 +26,11 @@ const Recruit = () => {
         </div>
 
         <Image
-          src="/omuraise.jpeg"
+          src="/exterior.png"
           alt="Recruit"
-          width={500}
-          height={600}
-          className="absolute w-[450px] h-[450px] right-0 z-100 object-cover -top-4"
+          width={420}
+          height={550}
+          className="absolute w-[420px] h-[550px] right-0 z-100 object-cover -top-4 filter grayscale-[20%]"
         />
       </div>
     </section>

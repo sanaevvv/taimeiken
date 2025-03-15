@@ -36,7 +36,7 @@ const MenuAccordion = ({ accordionList }: Props) => {
     <>
       {accordionList.map((item, index) => (
         <div key={index} className="mb-6">
-          <p className="mb-4 lg:w-[600px]">{item.desc}</p>
+          <p className="my-4 lg:w-[600px]">{item.desc}</p>
           <div className="flex gap-6 w-[1100px]">
             <div className="flex flex-col gap-2">
               <Image
@@ -44,16 +44,16 @@ const MenuAccordion = ({ accordionList }: Props) => {
                 alt="beefのスライスとポテト"
                 width={300}
                 height={300}
-                className="object-cover w-[320px] h-[320px] rounded-full"
+                className="object-cover w-[320px] h-[320px] rounded-[20px]"
               />
               <div className="w-[320px] h-[320px]">
-                {/* <Image
-                  src="/beef-potato.jpeg"
+                <Image
+                  src="/beef.jpeg"
                   alt="beefのスライスとポテト"
                   width={300}
                   height={300}
-                  className="object-cover w-[320px] h-[320px] rounded-full"
-                /> */}
+                  className="object-cover w-[320px] h-[320px] rounded-[20px]"
+                />
               </div>
             </div>
             <Accordion
@@ -109,20 +109,20 @@ const MenuAccordion = ({ accordionList }: Props) => {
             </Accordion>
             <div className="flex flex-col gap-2">
               <div className="w-[320px] h-[320px]">
-                {/* <Image
+                <Image
                   src="/shrink.png"
                   alt="エビフライの盛り合わせ"
                   width={300}
                   height={300}
-                  className="object-cover w-[320px] h-[320px] rounded-full"
-                /> */}
+                  className="object-cover w-[320px] h-[320px] rounded-[20px]"
+                />
               </div>
               <Image
-                src="/shrink.png"
+                src="/omuraise.jpeg"
                 alt="エビフライの盛り合わせ"
                 width={300}
                 height={300}
-                className="object-cover w-[320px] h-[320px] rounded-full"
+                className="object-cover w-[320px] h-[320px] rounded-[20px]"
               />
             </div>
           </div>

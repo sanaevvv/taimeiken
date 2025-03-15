@@ -9,8 +9,8 @@ const History = () => {
           <div>
             <Image
               src="/exterior.JPG"
-              width={450}
-              height={300}
+              width={420}
+              height={550}
               alt="たいめいけんの外観"
               className="w-[420px] h-[550px] object-cover -mt-8"
             />
