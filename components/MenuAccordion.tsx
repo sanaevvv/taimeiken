@@ -65,7 +65,7 @@ const MenuAccordion = ({ accordionList }: Props) => {
                 <AccordionItem key={listIndex} value={`item-${listIndex}`}>
                   <AccordionTrigger>{listItem.trigger}</AccordionTrigger>
                   <AccordionContent>
-                    {listItem.mode === 'single' &&
+                    {(!listItem.mode || listItem.mode === 'single') &&
                       listItem.triggerContent.map((content, contentIndex) => (
                         <dd key={contentIndex} className="py-1">
                           <div className="flex justify-between">

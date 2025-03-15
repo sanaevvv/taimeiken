@@ -1059,7 +1059,6 @@ const accordionList2 = [
     note?: string;
   }>;
 }>;
-
 const MenuTabs = () => {
   return (
     <Tabs defaultValue="menu1" className="w-[400px] text-white">
