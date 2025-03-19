@@ -2,33 +2,26 @@ import Image from 'next/image';
 import { Button } from './ui/button';
 import { Link } from '@/i18n/routing';
 import { SpinningText } from '@/components/magicui/spinning-text';
-import { client } from '@/lib/client';
+import { client, getNewNews } from '@/lib/client';
 import { formatDate } from '@/lib/utils';
-import { revalidateTag } from 'next/cache';
 
 const News = async () => {
-  const data = await client.get({
-    endpoint: 'news',
-    queries: {
-      limit: 3,
-      orders: '-publishedAt',
-    },
-  });
+  const data = await getNewNews();
 
-  if (data.contents.length === 0) {
+  if (data.length === 0) {
     return (
       <p className="text-white text-center text-xl">現在、Newsがありません</p>
     );
   }
 
-  const news = data.contents.map((item: any) => (
+  const news = data.map((item: any) => (
     <Link
       href={`/news/${item.id}`}
       key={item.id}
       className="flex items-center gap-2 sm:gap-4 mb-2 w-full lg:w-[50vw] max-w-[800px]"
     >
       <time className="text-gray-400 text-sm">
-        {formatDate(data.contents[0].publishedAt)}
+        {formatDate(new Date(item.publishedAt))}
       </time>
       <p className="text-gray-400 text-[13px] rounded-full border border-gray-400 px-2 max-w-[100px] text-center">
         {item.tag}
@@ -38,7 +31,7 @@ const News = async () => {
   ));
   return (
     <section className="bg-black relative h-[20vh]">
-      <div>
+      <div className="relative">
         <Image
           src="/beef.png"
           alt="beef"
@@ -46,9 +39,12 @@ const News = async () => {
           height={300}
           className="absolute w-[47vw] lg:w-[28vw] top-[40vh] lg:top-[13vh] left-0 object-cover aspect-[4/3] z-10"
         />
+        <div className="absolute w-[47vw] lg:w-[28vw] top-[40vh] lg:top-[13vh] left-0 object-cover aspect-[4/3] bg-[radial-gradient(ellipse,_rgba(0,0,0,0.2)_70%,_black_100%)] z-30"></div>
       </div>
       <div className="px-4 md:px-6 lg:pl-[35vw] text-white py-10 lg:pb-20">
-        <h2 className="text-xl sm:text-2xl font-bold lg:pb-4 font-montserrat">News</h2>
+        <h2 className="text-xl sm:text-2xl font-bold lg:pb-4 font-montserrat">
+          News
+        </h2>
 
         {news}
 
@@ -65,7 +61,7 @@ const News = async () => {
           className="mt-[10vh]"
           fontSize={2}
           duration={8}
-          radius={7}
+          radius={6}
         >
           TAIMEIKEN • TAIMEIKEN • TAIMEIKEN •
         </SpinningText>

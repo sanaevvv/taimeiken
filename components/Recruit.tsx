@@ -44,7 +44,7 @@ const Recruit = () => {
             alt="Recruit"
             width={420}
             height={550}
-            className="absolute hidden md:block  md:w-[36%] aspect-[3/4] -right-[50px] -mt-5 rotate-12 blur-[7px] filter brightness-90 object-cover"
+            className="hidden md:block absolute md:w-[36%] aspect-[3/4] lg:-right-[50px] -mt-5 rotate-12 blur-[7px] filter brightness-90 object-cover"
           />
         </div>
       </div>

@@ -5,13 +5,13 @@ export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs))
 }
 
-export const formatDate = (dateString: string) => {
+export const formatDate = (date: Date) => {
   return new Intl.DateTimeFormat('ja-JP', {
     year: 'numeric',
     month: '2-digit',
     day: '2-digit',
   })
-    .format(new Date(dateString))
+    .format(date)
     .split('/')
-    .join('-');
+    .join('.');
 };
