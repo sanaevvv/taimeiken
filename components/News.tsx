@@ -1,0 +1,86 @@
+import Image from 'next/image';
+import { Button } from './ui/button';
+import { Link } from '@/i18n/routing';
+import { SpinningText } from '@/components/magicui/spinning-text';
+import { client } from '@/lib/client';
+import { formatDate } from '@/lib/utils';
+import { revalidateTag } from 'next/cache';
+
+const News = async () => {
+  const data = await client.get({
+    endpoint: 'news',
+    queries: {
+      limit: 3,
+      orders: '-publishedAt',
+    },
+  });
+
+  if (data.contents.length === 0) {
+    return (
+      <p className="text-white text-center text-xl">現在、Newsがありません</p>
+    );
+  }
+
+  const news = data.contents.map((item: any) => (
+    <Link
+      href={`/news/${item.id}`}
+      key={item.id}
+      className="flex items-center gap-2 sm:gap-4 mb-2 w-full lg:w-[50vw] max-w-[800px]"
+    >
+      <time className="text-gray-400 text-sm">
+        {formatDate(data.contents[0].publishedAt)}
+      </time>
+      <p className="text-gray-400 text-[13px] rounded-full border border-gray-400 px-2 max-w-[100px] text-center">
+        {item.tag}
+      </p>
+      <p className="truncate flex-1">{item.title}</p>
+    </Link>
+  ));
+  return (
+    <section className="bg-black relative h-[20vh]">
+      <div>
+        <Image
+          src="/beef.png"
+          alt="beef"
+          width={600}
+          height={300}
+          className="absolute w-[47vw] lg:w-[28vw] top-[40vh] lg:top-[13vh] left-0 object-cover aspect-[4/3] z-10"
+        />
+      </div>
+      <div className="px-4 md:px-6 lg:pl-[35vw] text-white py-10 lg:pb-20">
+        <h2 className="text-xl sm:text-2xl font-bold lg:pb-4 font-montserrat">News</h2>
+
+        {news}
+
+        <Button
+          variant="secondary"
+          className="mt-6 rounded-sm font-bold"
+          asChild
+        >
+          <Link href="/news">もっと読む</Link>
+        </Button>
+      </div>
+      <div className="relative hidden lg:block">
+        <SpinningText
+          className="mt-[10vh]"
+          fontSize={2}
+          duration={8}
+          radius={7}
+        >
+          TAIMEIKEN • TAIMEIKEN • TAIMEIKEN •
+        </SpinningText>
+        <div className="absolute inset-0 flex items-center justify-center z-100">
+          <Image
+            src="/logo-icon.png"
+            alt="logo"
+            width={100}
+            height={100}
+            // className="size-22"
+          />
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default News;

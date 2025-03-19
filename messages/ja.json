@@ -1,0 +1,11 @@
+{
+  "Navigation": {
+    "home": "ホーム",
+    "menu": "メニュー一覧",
+    "contact": "お問い合わせ",
+    "profile": "会社概要",
+    "recruit": "採用情報",
+    "license": "監修商品",
+    "news": "ニュース一覧"
+  }
+}

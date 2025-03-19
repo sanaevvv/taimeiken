@@ -1,0 +1,11 @@
+{
+  "Navigation": {
+    "home": "홈",
+    "menu": "메뉴",
+    "contact": "문의",
+    "profile": "회사 소개",
+    "recruit": "채용 정보",
+    "license": "감수 제품",
+    "news": "뉴스"
+  }
+}
