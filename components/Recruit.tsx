@@ -3,9 +3,9 @@ import { Button } from './ui/button';
 
 const Recruit = () => {
   return (
-    <section className="bg-black py-20 pt-[400px] pb-[500px]">
-      <div className="flex justify-between max-w-[1100px] gap-[4vw] mx-auto py-6 pb-36 relative">
-        <div className="mt-[120px] px-4 lg:px-0 lg:w-[550px] text-white w-full max-w-[550px] md:w-[60%] absolute bottom-0 left-0 z-30 top-[30px] lg:top-20">
+    <section className="py-20 pt-[400px] pb-[500px]">
+      <div className="max-w-[1100px] mx-auto py-6 pb-36 relative">
+        <div className="mt-[120px] px-4 lg:w-[550px] text-white max-w-[550px] md:w-[60%] absolute bottom-0 left-0 z-30 top-[30px] lg:top-20">
           <div className="flex gap-2">
             <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold pb-4 tracking-widest font-montserrat">
               Recruit
@@ -31,22 +31,20 @@ const Recruit = () => {
           </Button>
         </div>
 
-        <div className="mt-28 lg:mt-30">
-          <Image
-            src="/exterior.png"
-            alt="Recruit"
-            width={420}
-            height={550}
-            className="absolute right-0 aspect-[3/4] md:w-[36%] z-10 top-[220px] md:top-[150px] filter brightness-50 md:brightness-100 object-cover h-[45vh] sm:h-[50vh] md:h-auto"
-          />
-          <Image
-            src="/exterior.png"
-            alt="Recruit"
-            width={420}
-            height={550}
-            className="hidden md:block absolute md:w-[36%] aspect-[3/4] lg:-right-[50px] -mt-5 rotate-12 blur-[7px] filter brightness-90 object-cover"
-          />
-        </div>
+        <Image
+          src="/exterior.png"
+          alt="Recruit"
+          width={420}
+          height={550}
+          className="absolute right-0 aspect-[3/4] md:w-[36%] z-10 top-[220px] md:top-[120px] filter brightness-50 md:brightness-100 object-cover h-[350px] md:h-auto"
+        />
+        <Image
+          src="/exterior.png"
+          alt="Recruit"
+          width={420}
+          height={550}
+          className="absolute hidden md:block md:w-[36%] aspect-[3/4] -right-[50px] mt-20 rotate-12 blur-[7px] filter brightness-90 object-cover"
+        />
       </div>
     </section>
   );

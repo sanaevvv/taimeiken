@@ -37,9 +37,9 @@ const News = async () => {
           alt="beef"
           width={600}
           height={300}
-          className="absolute w-[47vw] lg:w-[28vw] top-[40vh] lg:top-[13vh] left-0 object-cover aspect-[4/3] z-10"
+          className="absolute w-[47vw] lg:w-[28vw] top-[250px] lg:top-[10vh] max-w-[500px] left-0 object-cover aspect-[4/3] z-10"
         />
-        <div className="absolute w-[47vw] lg:w-[28vw] top-[40vh] lg:top-[13vh] left-0 object-cover aspect-[4/3] bg-[radial-gradient(ellipse,_rgba(0,0,0,0.2)_70%,_black_100%)] z-30"></div>
+        <div className="absolute w-[47vw] lg:w-[28vw] top-[250px] lg:top-[10vh] left-0 object-cover aspect-[4/3] bg-[radial-gradient(ellipse,_rgba(0,0,0,0)_60%,_black_100%)] z-30 max-w-[500px] "></div>
       </div>
       <div className="px-4 md:px-6 lg:pl-[35vw] text-white py-10 lg:pb-20">
         <h2 className="text-xl sm:text-2xl font-bold lg:pb-4 font-montserrat">
