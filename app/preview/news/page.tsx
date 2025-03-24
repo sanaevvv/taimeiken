@@ -16,33 +16,33 @@ const ContentIdPreviewPage = async ({ searchParams }: Props) => {
 
   const { id, draftKey } = searchParams;
    if (!id || !draftKey) {
-     return <div>お探しのページは見つかりません。</div>;
+     return <div className="text-white text-xl text-center mt-[6em]">お探しのページは見つかりません。</div>;
    }
 
   const getNews = await getNewsDraftById(id, { draftKey });
 
   return (
     <>
-      <section className="container md:p-[6rem]">
+      <section className="container md:p-[6rem] text-white">
         <article className="md:pl-[2rem]">
-          <div>
-            <time className="pr-4">
+          <div className="flex items-center gap-2">
+            <time className="text-gray-400 text-sm">
               {formatDate(
                 new Date(
                   getNews.updatedAt ? getNews.updatedAt : getNews.createdAt
                 )
               )}
             </time>
-            <Badge className="bg-blue text-white rounded-full">
-              {getNews.category}
+            <Badge className="rounded-full text-gray-400" variant="outline">
+              {getNews.tag}
             </Badge>
           </div>
 
           <h2 className="pt-2 text-sm py-8">{getNews.title}</h2>
           <div>{parse(getNews.content)}</div>
         </article>
-          <div className="flex justify-center mt-12">
-          <LinkButton text="一覧に戻る" href="/news" />
+        <div className="flex justify-center mt-12">
+          <LinkButton text="一覧に戻る" href="/news" disabled={true} />
         </div>
       </section>
     </>

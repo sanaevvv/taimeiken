@@ -21,7 +21,7 @@ export interface NewsDraft {
   id: string;
   title: string;
   content: string;
-  category: string;
+  tag: string;
   createdAt: Date;
   updatedAt: Date | string | number;
 }

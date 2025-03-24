@@ -9,16 +9,24 @@ type Props = {
   className?: string;
   children?: React.ReactNode;
   variant?: 'default' | 'secondary';
+  disabled?: boolean;
 };
 export const LinkButton = ({
   text = '詳しく見る',
   href,
   variant = 'default',
+  className,
+  disabled = false,
 }: Props) => {
   return (
     <Button
       variant={variant}
       asChild
+      disabled={disabled}
+      className={cn(
+        disabled && 'pointer-events-none opacity-50',
+        className,
+      )}
     >
       <Link href={href}
       >
