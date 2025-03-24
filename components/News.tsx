@@ -2,8 +2,9 @@ import Image from 'next/image';
 import { Button } from './ui/button';
 import { Link } from '@/i18n/routing';
 import { SpinningText } from '@/components/magicui/spinning-text';
-import { client, getNewNews } from '@/lib/client';
+import { getNewNews } from '@/lib/client';
 import { formatDate } from '@/lib/utils';
+import { Badge } from './ui/badge';
 
 const News = async () => {
   const data = await getNewNews();
@@ -23,14 +24,14 @@ const News = async () => {
       <time className="text-gray-400 text-sm">
         {formatDate(new Date(item.publishedAt))}
       </time>
-      <p className="text-gray-400 text-[13px] rounded-full border border-gray-400 px-2 max-w-[100px] text-center">
+      <Badge variant="outline" className="rounded-full text-gray-400">
         {item.tag}
-      </p>
+      </Badge>
       <p className="truncate flex-1">{item.title}</p>
     </Link>
   ));
   return (
-    <section className="bg-black relative h-[20vh]">
+    <section className="relative h-[20vh]">
       <div className="relative">
         <Image
           src="/beef.png"
@@ -39,7 +40,7 @@ const News = async () => {
           height={300}
           className="absolute w-[47vw] lg:w-[28vw] top-[250px] lg:top-[10vh] max-w-[500px] left-0 object-cover aspect-[4/3] z-10"
         />
-        <div className="absolute w-[47vw] lg:w-[28vw] top-[250px] lg:top-[10vh] left-0 object-cover aspect-[4/3] bg-[radial-gradient(ellipse,_rgba(0,0,0,0)_60%,_black_100%)] z-30 max-w-[500px] "></div>
+        <div className="absolute w-[47vw] lg:w-[28vw] top-[250px] lg:top-[10vh] left-0 object-cover aspect-[4/3] bg-[radial-gradient(ellipse,_rgba(0,0,0,0)_40%,_black_90%)] z-30 max-w-[500px] "></div>
       </div>
       <div className="px-4 md:px-6 lg:pl-[35vw] text-white py-10 lg:pb-20">
         <h2 className="text-xl sm:text-2xl font-bold lg:pb-4 font-montserrat">
@@ -59,9 +60,8 @@ const News = async () => {
       <div className="relative hidden lg:block">
         <SpinningText
           className="mt-[10vh]"
-          fontSize={2}
           duration={8}
-          radius={6}
+          radius={7}
         >
           TAIMEIKEN • TAIMEIKEN • TAIMEIKEN •
         </SpinningText>
@@ -71,7 +71,6 @@ const News = async () => {
             alt="logo"
             width={100}
             height={100}
-            // className="size-22"
           />
         </div>
       </div>

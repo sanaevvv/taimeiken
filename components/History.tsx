@@ -3,7 +3,7 @@ import { Button } from './ui/button';
 
 const History = () => {
   return (
-    <section className="bg-black pt-[100px]">
+    <section className="pt-[100px]">
       <div className="max-w-[1100px] mx-auto relative">
         <Image
           src="/exterior.JPG"

@@ -72,7 +72,6 @@ export const LanguageSwitcher = () => {
           >
             <Button
               className="flex items-center gap-2"
-              disabled={loc === locale}
               onClick={() => router.push(`/${loc}`)}
               variant="ghost"
             >

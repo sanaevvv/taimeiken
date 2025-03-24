@@ -36,14 +36,14 @@ const Recruit = () => {
           alt="Recruit"
           width={420}
           height={550}
-          className="absolute right-0 aspect-[3/4] md:w-[36%] z-10 top-[220px] md:top-[120px] filter brightness-50 md:brightness-100 object-cover h-[350px] md:h-auto"
+          className="absolute right-0 aspect-[3/4] md:w-[36%] z-10 top-[220px] md:top-[120px] filter md:brightness-[0.65] object-cover h-[350px] md:h-auto"
         />
         <Image
           src="/exterior.png"
           alt="Recruit"
           width={420}
           height={550}
-          className="absolute hidden md:block md:w-[36%] aspect-[3/4] -right-[50px] mt-20 rotate-12 blur-[7px] filter brightness-90 object-cover"
+          className="absolute hidden md:block md:w-[36%] aspect-[3/4] -right-[50px] mt-20 rotate-12 blur-[7px] filter brightness-50 object-cover"
         />
       </div>
     </section>

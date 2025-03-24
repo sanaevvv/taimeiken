@@ -31,7 +31,7 @@ const Menu = () => {
           alt="interior"
           width={600}
           height={300}
-          className="absolute object-cover w-[47vw] lg:w-[28vw] aspect-[4/3] right-0 -top-[30vh] sm:-top-[300px] max-w-[500px] "
+          className="absolute object-cover w-[47vw] lg:w-[28vw] aspect-[4/3] right-0 -top-[30vh] sm:-top-[300px] max-w-[500px] filter brightness-75"
         />
       </div>
     </section>

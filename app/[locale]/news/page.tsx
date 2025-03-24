@@ -17,12 +17,6 @@ const NewsListPage = async () => {
   if (newsList && newsList.length > 0) {
     return (
       <section className="pt-24 pb-24 container md:px-[6rem]">
-        {/* <SectionTitle
-          enText="News"
-          jaText="最新情報"
-          className="md:pl-[2rem] pb-4"
-        /> */}
-
         <div className="py-6 md:px-[2rem]">
           {newsList.map((news) => (
             <div key={news.id}>

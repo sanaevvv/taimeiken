@@ -1,4 +1,5 @@
 import { LinkButton } from '@/components/LinkButton';
+import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Link } from '@/i18n/routing';
 import { getNewsDetail } from '@/lib/client';
@@ -23,23 +24,21 @@ const NewsDetailsPage = async ({ params }: Props) => {
 
   if (getNews) {
     return (
-      <section className="container md:px-[6rem]">
-        最新情報
-        <p className="md:pl-[2rem] pb-12">弊社の最新情報をお知らせします。</p>
+      <section className="container md:p-[6rem]">
         <article className="md:pl-[2rem]">
           <div className="flex items-center gap-2">
             <time className="text-gray-400 text-sm">
               {formatDate(new Date(getNews.publishedAt))}
             </time>
-            <p className="text-gray-400 text-[13px] rounded-full border border-gray-400 px-2 max-w-[100px] text-center">
+            <Badge variant="outline" className="rounded-full text-gray-400">
               {getNews.tag}
-            </p>
+            </Badge>
           </div>
 
           <h2 className="pt-2 text-sm py-8">{getNews.title}</h2>
           <div className="external-link">{parse(getNews.content)}</div>
         </article>
-        <div className="flex justify-center mt-6">
+        <div className="flex justify-center mt-12">
           <LinkButton text="一覧に戻る" href="/news" />
         </div>
       </section>

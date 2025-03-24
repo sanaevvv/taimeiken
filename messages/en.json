@@ -7,5 +7,1088 @@
     "recruit": "Recruit",
     "license": "License",
     "news": "News"
+  },
+  "Menu": {
+    "accordionList1": {
+      "desc": "The first floor is a casual Western-style restaurant where you can enjoy Taimeiken's traditional flavors at reasonable prices. We offer a wide selection of Western dishes that appeal to guests of all ages.",
+      "list": [
+        {
+          "trigger": "Salad",
+          "triggerContent": [
+            {
+              "name": "White asparagus salad",
+              "price": "1,300円"
+            },
+            {
+              "name": "Egg salad",
+              "price": "1,300円"
+            },
+            {
+              "name": "Tomato salad",
+              "price": "1,300円"
+            },
+            {
+              "name": "Cucumber salad",
+              "price": "1,300円"
+            },
+            {
+              "name": "Lettuce salad",
+              "price": "1,300円"
+            },
+            {
+              "name": "Vegetable salad",
+              "price": "1,400円"
+            },
+            {
+              "name": "Crab potato salad",
+              "price": "2,000円"
+            }
+          ]
+        },
+        {
+          "trigger": "Taimeiken Special (small side dishes)",
+          "triggerContent": [
+            {
+              "name": "Borcht",
+              "price": "100円"
+            },
+            {
+              "name": "Coleslaw",
+              "price": "100円"
+            },
+            {
+              "note": "※ Please note that ordering single items is not allowed."
+            }
+          ]
+        },
+        {
+          "trigger": "Meat dishes",
+          "triggerContent": [
+            {
+              "name": "Deep fried pork loin (with rice)",
+              "price": "1,700円"
+            },
+            {
+              "name": "Chicken cutlet (with rice)",
+              "price": "1,600円"
+            },
+            {
+              "name": "Deep fried beef liver (with rice)",
+              "price": "1,600円"
+            },
+            {
+              "name": "Pork saute (with rice)",
+              "price": "2,400円"
+            },
+            {
+              "name": "Minced cutlet (with rice)",
+              "price": "2,400円"
+            },
+            {
+              "name": "Beef croquettes (with rice)",
+              "price": "2,800円"
+            },
+            {
+              "name": "Beef liver saute (with rice)",
+              "price": "2,500円"
+            }
+          ]
+        },
+        {
+          "trigger": "Special selected steaks",
+          "triggerContent": [
+            {
+              "name": "Tongue stew (with rice)",
+              "price": "3,500円"
+            },
+            {
+              "name": "Beef stew (with rice)",
+              "price": "3,500円"
+            },
+            {
+              "name": "Beef cutlet (with rice)",
+              "price": "3,800円"
+            },
+            {
+              "name": "Hamburger steak (with rice)",
+              "price": "3,300円"
+            },
+            {
+              "name": "Premium hamburger steak (2F)",
+              "price": "4,200円"
+            },
+            {
+              "name": "Fillet steak（garlic soy sauce）（2F）",
+              "price": "8,800円"
+            },
+            {
+              "name": "Fillet steak（demiglace sauce）（2F）",
+              "price": "8,800円"
+            }
+          ]
+        },
+        {
+          "trigger": "Rice dishes",
+          "triggerContent": [
+            {
+              "name": "Chicken curry",
+              "price": "3,000円"
+            },
+            {
+              "name": "Pork curry",
+              "price": "3,000円"
+            },
+            {
+              "name": "Beef curry",
+              "price": "3,600円"
+            },
+            {
+              "name": "Hashed beef with rice",
+              "price": "3,200円"
+            },
+            {
+              "name": "Hashed beef with prawn",
+              "price": "3,300円"
+            },
+            {
+              "name": "Pilaf with prawn",
+              "price": "2,900円"
+            },
+            {
+              "name": "Pilaf with chicken",
+              "price": "2,900円"
+            },
+            {
+              "name": "Pilaf with crab",
+              "price": "3,100円"
+            },
+            {
+              "name": "Chicken rice",
+              "price": "2,900円"
+            },
+            {
+              "name": "Seafood fried rice",
+              "price": "3,300円"
+            },
+            {
+              "name": "Steak bowl with grated yam and raw egg\n(Served with soup, salad and dessert)",
+              "price": "3,800円"
+            },
+            {
+              "name": "Pork cutlet rice bowl set\n(Served with soup, salad and dessert)",
+              "price": "3,600円"
+            },
+            {
+              "name": "Rice (Kyoto Prefecture Koshihikari)",
+              "price": "500円"
+            },
+            {
+              "name": "Bouillon rice (Maggi)",
+              "price": "600円"
+            },
+            {
+              "name": "Brown rice (Miyagi Prefecture Kin no Ibuki)",
+              "price": "600円"
+            },
+            {
+              "name": "Bread",
+              "price": "600円"
+            },
+            {
+              "name": "Butter",
+              "price": "400円"
+            }
+          ]
+        },
+        {
+          "trigger": "Spaghetti & seafood dishes",
+          "triggerContent": [
+            {
+              "name": "Spaghetti napolitana with prawn",
+              "price": "2,500円"
+            },
+            {
+              "name": "Spaghetti napolitana with crab",
+              "price": "2,900円"
+            },
+            {
+              "name": "Prawns macaroni gratin",
+              "price": "2,700円"
+            },
+            {
+              "name": "Crab macaroni gratin",
+              "price": "2,900円"
+            },
+            {
+              "name": "Chicken macaroni gratin",
+              "price": "2,600円"
+            },
+            {
+              "name": "Crab cream croquette",
+              "price": "2,900円"
+            },
+            {
+              "name": "White fish mignonette (with rice)",
+              "price": "4,400円"
+            },
+            {
+              "name": "Deep fried oysters(only available during October to March)",
+              "price": "2,200円"
+            },
+            {
+              "name": "Deep fried fine selected prawn (with rice)",
+              "price": "2,900円"
+            },
+            {
+              "name": "Deep fried prawn (with rice)",
+              "price": "2,000円"
+            },
+            {
+              "name": "Deep fried scallop (with rice)",
+              "price": "2,000円"
+            },
+            {
+              "name": "Deep fried mixed seafood (prawn, squid and scallop)",
+              "price": "2,500円"
+            }
+          ]
+        },
+        {
+          "trigger": "Egg dishes",
+          "triggerContent": [
+            {
+              "name": "Omrice\n（Fried omelette stuffed with fried rice made with ketchup and ham）",
+              "price": "2,100円"
+            },
+            {
+              "name": "Omhayashi\n（Fried rice made with ketchup and hum topped with half fried egg）",
+              "price": "2,600円"
+            },
+            {
+              "name": "Prawn Omrice\n（Fried omelette stuffed with fried rice made with ketchup and prawn）",
+              "price": "2,600円"
+            },
+            {
+              "name": "Beef Omrice（garlic）\n（Fried omelette stuffed with fried rice made with demiglace sauce and beef）",
+              "price": "2,800円"
+            },
+            {
+              "name": "Tampopo Omrice\n（A plain omelet, half-cooked and soft inside, on top of ketchup-flavored chicken fried rice）",
+              "price": "2,400円"
+            },
+            {
+              "name": "Tomato & asparagus omelet",
+              "price": "2,100円"
+            },
+            {
+              "name": "Ham omelet",
+              "price": "2,100円"
+            },
+            {
+              "name": "Plain omelet",
+              "price": "1,900円"
+            },
+            {
+              "name": "Tampopo Beef Omrice\n(A beef omelette, half-cooked and soft inside, on top of fried rice flavored with demiglace sauce and beef)",
+              "price": "3,600円"
+            },
+            {
+              "note": "* We use carefully selected premium eggs for all our egg dishes."
+            },
+            {
+              "name": "Rice",
+              "price": "400円"
+            },
+            {
+              "name": "Bread",
+              "price": "400円"
+            }
+          ]
+        },
+        {
+          "trigger": "Ramen(chinese-style noodles)",
+          "triggerContent": [
+            {
+              "name": "Ramen",
+              "price": "1,200円"
+            },
+            {
+              "name": "Ramen with butter",
+              "price": "1,300円"
+            },
+            {
+              "name": "Ramen with char siu",
+              "price": "1,500円"
+            },
+            {
+              "name": "Ramen with Miso broth",
+              "price": "1,500円"
+            },
+            {
+              "name": "Ramen with char siu",
+              "price": "1,600円"
+            },
+            {
+              "name": "Large portion ramen",
+              "price": "1,500円"
+            },
+            {
+              "name": "Large portion ramen with butter",
+              "price": "1,600円"
+            },
+            {
+              "name": "Large portion ramen with char siu",
+              "price": "1,800円"
+            },
+            {
+              "name": "Boiled egg(for ramen)",
+              "price": "200円"
+            },
+            {
+              "note": "＊ご希望の方に背脂をお付けしております。"
+            }
+          ]
+        },
+        {
+          "trigger": "Drink(alcohol)",
+          "triggerContent": [
+            {
+              "name": "Beer　(medium bottle)",
+              "price": "1,000円"
+            },
+            {
+              "name": "Beer　(small bottle)",
+              "price": "900円"
+            },
+            {
+              "name": "Yebisu draft beer　(medium bottle)",
+              "price": "1,100円"
+            },
+            {
+              "name": "Draft beer (large)（800ml）",
+              "price": "1,300円"
+            },
+            {
+              "name": "Draft beer (small) （400ml）",
+              "price": "900円"
+            },
+            {
+              "name": "Black draft beer (large)（800ml）",
+              "price": "1,400円"
+            },
+            {
+              "name": "Black draft beer (small)（400ml）",
+              "price": "1,000円"
+            },
+            {
+              "name": "London Pub Guinness (330ml)",
+              "price": "1,000円"
+            },
+            {
+              "name": "Non-alcohole beer（334ml）",
+              "price": "900円"
+            },
+            {
+              "name": "Sake",
+              "price": "1,000円"
+            },
+            {
+              "name": "Kamotsuru (dry)（300ml）",
+              "price": "1,500円"
+            },
+            {
+              "name": "Kamotsuru (cold)（300ml）",
+              "price": "1,400円"
+            },
+            {
+              "name": "Highball(whisky and soda) (one finger)",
+              "price": "900円"
+            },
+            {
+              "name": "Highball(whisky and soda) (two fingers)",
+              "price": "1,700円"
+            },
+            {
+              "name": "Chuhai(cocktail of Japanese spirits) (lime)",
+              "price": "900円"
+            },
+            {
+              "name": "Chuhai(cocktail of Japanese spirits) (lemon)",
+              "price": "900円"
+            }
+          ]
+        },
+        {
+          "trigger": "Drink（beverage）",
+          "triggerContent": [
+            {
+              "name": "Coke",
+              "price": "600円"
+            },
+            {
+              "name": "Orange juice",
+              "price": "600円"
+            },
+            {
+              "name": "Oolong tea",
+              "price": "600円"
+            },
+            {
+              "name": "Black oolong tea",
+              "price": "800円"
+            },
+            {
+              "name": "Apple juice",
+              "price": "800円"
+            },
+            {
+              "name": "Hot coffee",
+              "price": "600円"
+            },
+            {
+              "name": "Iced coffee",
+              "price": "700円"
+            }
+          ]
+        },
+        {
+          "trigger": "Wine",
+          "triggerContent": [
+            {
+              "name": "Glass of wine (white)",
+              "price": "900円"
+            },
+            {
+              "name": "Glass of wine (red)",
+              "price": "900円"
+            },
+            {
+              "name": "Sparkling wine",
+              "price": "1,600円"
+            },
+            {
+              "note": "※ Please ask our staff for the wine list."
+            }
+          ]
+        },
+        {
+          "trigger": "Dessert",
+          "triggerContent": [
+            {
+              "name": "Vanilla ice cream",
+              "price": "800円"
+            },
+            {
+              "name": "Green tea ice cream",
+              "price": "800円"
+            }
+          ]
+        }
+      ]
+    },
+    "accordionList2": {
+      "desc": "The second floor offers authentic French cuisine. Please join us for your special occasions.",
+      "list": [
+        {
+          "mode": "single",
+          "trigger": "Matoya Oysters (October to March)",
+          "triggerContent": [
+            {
+              "name": "Salted oysters",
+              "price": "2,000円"
+            },
+            {
+              "name": "Fresh oysters (October to March)",
+              "price": "3,300円"
+            },
+            {
+              "name": "Deep fried oysters (October to March)",
+              "price": "4,200円"
+            },
+            {
+              "name": "Oysters Florentine (October to March)",
+              "price": "4,200円"
+            }
+          ]
+        },
+        {
+          "mode": "single",
+          "trigger": "Prawns",
+          "triggerContent": [
+            {
+              "name": "Prawn coquille",
+              "price": "3,300円"
+            },
+            {
+              "name": "Prawn doria",
+              "price": "4,200円"
+            },
+            {
+              "name": "Deep fried small prawns",
+              "price": "4,400円"
+            },
+            {
+              "name": "Deep fried whole prawns",
+              "price": "4,400円"
+            },
+            {
+              "name": "Deep fried tiger prawns <Reservation required>",
+              "price": "Market price"
+            }
+          ]
+        },
+        {
+          "mode": "single",
+          "trigger": "Crab",
+          "triggerContent": [
+            {
+              "name": "Crab cream croquette",
+              "price": "3,900円"
+            },
+            {
+              "name": "Crab coquille",
+              "price": "3,700円"
+            },
+            {
+              "name": "Crab doria",
+              "price": "4,400円"
+            }
+          ]
+        },
+        {
+          "mode": "single",
+          "trigger": "Scallops",
+          "triggerContent": [
+            {
+              "name": "Deep fried scallops",
+              "price": "4,400円"
+            },
+            {
+              "name": "Scallops meunière",
+              "price": "4,400円"
+            },
+            {
+              "name": "Coquilles St. Jacques",
+              "price": "4,400円"
+            }
+          ]
+        },
+        {
+          "mode": "single",
+          "trigger": "Scallops",
+          "triggerContent": [
+            {
+              "name": "Deep fried scallops",
+              "price": "4,400円"
+            },
+            {
+              "name": "Scallops meunière",
+              "price": "4,400円"
+            },
+            {
+              "name": "Coquilles St. Jacques",
+              "price": "4,400円"
+            }
+          ]
+        },
+        {
+          "mode": "single",
+          "trigger": "Fresh fish",
+          "triggerContent": [
+            {
+              "name": "Deep fried fish",
+              "price": "4,400円"
+            },
+            {
+              "name": "Fish meunière",
+              "price": "4,400円"
+            },
+            {
+              "name": "Fish gratin",
+              "price": "4,400円"
+            },
+            {
+              "name": "Nostalgic deep fried horse mackerel",
+              "price": "2,700円"
+            },
+            {
+              "name": "Assorted deep fried seafood",
+              "price": "2,700円"
+            }
+          ]
+        },
+        {
+          "mode": "single",
+          "trigger": "Appetizers",
+          "triggerContent": [
+            {
+              "name": "Assorted appetizers",
+              "price": "3,300円"
+            },
+            {
+              "name": "Prawn cocktail",
+              "price": "4,800円"
+            },
+            {
+              "name": "Crab cocktail",
+              "price": "4,900円"
+            },
+            {
+              "name": "Escargot",
+              "price": "3,100円"
+            },
+            {
+              "name": "Smoked salmon",
+              "price": "3,100円"
+            },
+            {
+              "name": "Caviar",
+              "price": "17,600円"
+            }
+          ]
+        },
+        {
+          "mode": "single",
+          "trigger": "Salad",
+          "triggerContent": [
+            {
+              "name": "Vegetable salad",
+              "price": "1,400円"
+            },
+            {
+              "name": "Celery salad",
+              "price": "1,300円"
+            },
+            {
+              "name": "Tomato salad",
+              "price": "1,300円"
+            },
+            {
+              "name": "Lettuce salad",
+              "price": "1,300円"
+            },
+            {
+              "name": "Cucumber salad",
+              "price": "1,300円"
+            },
+            {
+              "name": "Coleslaw",
+              "price": "1,000円"
+            },
+            {
+              "name": "Shrimp salad（potato or lettuce）",
+              "price": "3,300円"
+            },
+            {
+              "name": "Crab salad（potato or lettuce）",
+              "price": "3,300円"
+            },
+            {
+              "name": "Mixed salad",
+              "price": "3,900円"
+            }
+          ]
+        },
+        {
+          "mode": "single",
+          "trigger": "Soups",
+          "triggerContent": [
+            {
+              "name": "Consomme soup",
+              "price": "1,800円"
+            },
+            {
+              "name": "Cold consomme",
+              "price": "1,800円"
+            },
+            {
+              "name": "Poached egg consomme",
+              "price": "1,900円"
+            },
+            {
+              "name": "Garlic soup",
+              "price": "2,000円"
+            },
+            {
+              "name": "French onion soup au gratin",
+              "price": "1,600円"
+            },
+            {
+              "name": "Baked cream soup",
+              "price": "1,600円"
+            },
+            {
+              "name": "Cream soup",
+              "price": "1,300円"
+            },
+            {
+              "name": "Tomato soup",
+              "price": "1,300円"
+            },
+            {
+              "name": "Corn soup",
+              "price": "1,300円"
+            },
+            {
+              "name": "Ukrainian style borscht",
+              "price": "1,300円"
+            },
+            {
+              "name": "Vichyssoise (June to August)",
+              "price": "1,300円"
+            }
+          ]
+        },
+        {
+          "mode": "single",
+          "trigger": "Abalone",
+          "triggerContent": [
+            {
+              "name": "Abalone coquille",
+              "price": "4,900円"
+            },
+            {
+              "name": "Abalone steak",
+              "price": "14,300円"
+            }
+          ]
+        },
+        {
+          "mode": "single",
+          "trigger": "Beef dishes",
+          "triggerContent": [
+            {
+              "name": "Special fillet steak (100g)",
+              "price": "7,700円"
+            },
+            {
+              "name": "Special fillet steak (200g)",
+              "price": "11,000円"
+            },
+            {
+              "name": "Special fillet steak (250g)",
+              "price": "16,500円"
+            },
+            {
+              "name": "Beef cutlet",
+              "price": "7,700円"
+            },
+            {
+              "name": "Beef stew",
+              "price": "5,000円"
+            },
+            {
+              "name": "Nihonbashi style borscht",
+              "price": "5,300円"
+            },
+            {
+              "name": "Tongue stew",
+              "price": "5,000円"
+            },
+            {
+              "name": "Oxtail stew",
+              "price": "5,000円"
+            },
+            {
+              "name": "Minced beef cutlet",
+              "price": "3,700円"
+            },
+            {
+              "name": "Beef croquette",
+              "price": "3,100円"
+            },
+            {
+              "name": "Veal cutlet",
+              "price": "4,200円"
+            },
+            {
+              "name": "Hamburg steak with fried egg and cheese\n(Made with 100% premium Japanese beef tenderloin)",
+              "price": "4,200円"
+            }
+          ]
+        },
+        {
+          "mode": "single",
+          "trigger": "Pork",
+          "triggerContent": [
+            {
+              "name": "Deep fried pork (fillet or loin)",
+              "price": "3,300円"
+            },
+            {
+              "name": "Sautéed pork (demiglace sauce or ginger sauce)",
+              "price": "3,300円"
+            }
+          ]
+        },
+        {
+          "mode": "single",
+          "trigger": "Young chicken",
+          "triggerContent": [
+            {
+              "name": "Deep fried chicken cutlet",
+              "price": "2,800円"
+            },
+            {
+              "name": "Sautéed chicken (demiglace sauce or ginger sauce)",
+              "price": "2,800円"
+            }
+          ]
+        },
+        {
+          "mode": "single",
+          "trigger": "Omurice (Rice omelette)",
+          "triggerContent": [
+            {
+              "name": "Classic omurice",
+              "price": "2,500円"
+            },
+            {
+              "name": "Tampopo omurice Itami Juzo style",
+              "price": "3,100円"
+            },
+            {
+              "name": "Tampopo omurice with prawn",
+              "price": "3,600円"
+            },
+            {
+              "name": "Omurice with hashed beef",
+              "price": "3,900円"
+            },
+            {
+              "name": "Omurice with beef stew",
+              "price": "4,100円"
+            }
+          ]
+        },
+        {
+          "mode": "single",
+          "trigger": "Pasta",
+          "triggerContent": [
+            {
+              "name": "Italian style spaghetti with prawn",
+              "price": "3,200円"
+            },
+            {
+              "name": "Italian style spaghetti with crab",
+              "price": "3,600円"
+            },
+            {
+              "name": "Neapolitan style spaghetti with prawn",
+              "price": "3,200円"
+            },
+            {
+              "name": "Neapolitan style spaghetti with crab",
+              "price": "3,600円"
+            },
+            {
+              "name": "Spaghetti with meat sauce",
+              "price": "3,300円"
+            },
+            {
+              "name": "Macaroni gratin with prawn",
+              "price": "3,300円"
+            },
+            {
+              "name": "Macaroni gratin with crab",
+              "price": "3,700円"
+            },
+            {
+              "name": "Macaroni gratin with chicken",
+              "price": "3,000円"
+            }
+          ]
+        },
+        {
+          "mode": "single",
+          "trigger": "Rice dishes",
+          "triggerContent": [
+            {
+              "name": "Chicken curry",
+              "price": "3,000円"
+            },
+            {
+              "name": "Pork curry",
+              "price": "3,000円"
+            },
+            {
+              "name": "Beef curry",
+              "price": "3,600円"
+            },
+            {
+              "name": "Hashed beef with rice",
+              "price": "3,200円"
+            },
+            {
+              "name": "Hashed beef with prawn",
+              "price": "3,300円"
+            },
+            {
+              "name": "Pilaf with prawn",
+              "price": "2,900円"
+            },
+            {
+              "name": "Pilaf with chicken",
+              "price": "2,900円"
+            },
+            {
+              "name": "Pilaf with crab",
+              "price": "3,100円"
+            },
+            {
+              "name": "Chicken rice",
+              "price": "2,900円"
+            },
+            {
+              "name": "Seafood fried rice",
+              "price": "3,300円"
+            },
+            {
+              "name": "Steak bowl with grated yam and raw egg\n(Served with soup, salad and dessert)",
+              "price": "3,800円"
+            },
+            {
+              "name": "Pork cutlet rice bowl set\n(Served with soup, salad and dessert)",
+              "price": "3,600円"
+            },
+            {
+              "name": "Rice (Kyoto Prefecture Koshihikari)",
+              "price": "500円"
+            },
+            {
+              "name": "Bouillon rice (Maggi)",
+              "price": "600円"
+            },
+            {
+              "name": "Brown rice (Miyagi Prefecture Kin no Ibuki)",
+              "price": "600円"
+            },
+            {
+              "name": "Bread",
+              "price": "600円"
+            },
+            {
+              "name": "Butter",
+              "price": "400円"
+            }
+          ]
+        },
+        {
+          "mode": "assort",
+          "trigger": "Appetizers",
+          "triggerContent": [
+            {
+              "name": "Assorted appetizers",
+              "price": "3,300円"
+            },
+            {
+              "name": "Prawn cocktail",
+              "price": "4,800円"
+            },
+            {
+              "name": "Crab cocktail",
+              "price": "4,900円"
+            },
+            {
+              "name": "Escargot",
+              "price": "3,100円"
+            },
+            {
+              "name": "Smoked salmon",
+              "price": "3,100円"
+            },
+            {
+              "name": "Caviar",
+              "price": "17,600円"
+            }
+          ]
+        },
+        {
+          "mode": "assort",
+          "trigger": "ASSORTED DISH COURSE",
+          "triggerContent": [
+            {
+              "name": "Assorted dishes",
+              "price": "9,900円",
+              "subItems": [
+                {
+                  "title": "OPTION 1",
+                  "name": [
+                    "Fresh Vegetables Appetizer",
+                    "Salmon and Papaya",
+                    "Fried Prawns",
+                    "Raw Sliced Flounder",
+                    "Steamed Abalone Liver Sauce",
+                    "Shrimp Cocktail",
+                    "Marinated Mussles",
+                    "Pickled Motoya Oysters",
+                    "Taimeiken Style Escargot"
+                  ]
+                },
+                {
+                  "title": "OPTION 2",
+                  "name": [
+                    "Roasted Japanese Beef",
+                    "Beef Tongue Stew",
+                    "Crab Cream Croquette",
+                    "Chicken Coquille",
+                    "Seafood Escabeche",
+                    "Beef Tongue Croquette",
+                    "Raw Ham",
+                    "Potage Soup",
+                    "Fritter of Sea Food"
+                  ]
+                },
+                { "title": "Taimeiken Special Ramen" },
+                { "title": "Dessert" }
+              ]
+            }
+          ]
+        },
+        {
+          "mode": "assort",
+          "trigger": "Courses",
+          "triggerContent": [
+            {
+              "name": "TAIMEIKEN SPECIAL COURSE",
+              "price": "14,300円",
+              "subItems": [
+                {
+                  "title": "Assortment of 9 Appetizers",
+                  "name": [
+                    "Fresh Vegetables Appetizer",
+                    "Salmon and Papaya",
+                    "Fritter of Sea Food",
+                    "Taimeiken Style Escargot",
+                    "Marinated Mussels",
+                    "Shrimp Cocktail",
+                    "Confit Canard",
+                    "Steamed Abalone Liver Sauce",
+                    "Raw Sliced Flounder"
+                  ]
+                },
+                { "title": "Today's Soup" },
+                { "title": "Fillet of steak" },
+                { "title": "Bread" },
+                { "title": "Shark Fin Ramen" },
+                { "title": "Dessert" },
+                { "title": "Coffee" }
+              ]
+            },
+            {
+              "name": "Third Generation Omurice Course",
+              "price": "5,500円",
+              "subItems": [
+                { "title": "Appetizer 6-piece (including Callus Rooster)" },
+                { "title": "Tampopo Omurice" },
+                { "title": "Dessert" },
+                { "title": "Coffee" }
+              ]
+            }
+          ],
+          "note": "Dishes are subject to change depending on the availability of fresh ingredients"
+        }
+      ]
+    }
   }
 }

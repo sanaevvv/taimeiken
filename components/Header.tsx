@@ -1,7 +1,7 @@
 import { Link } from '@/i18n/routing';
 import { useTranslations } from 'next-intl';
 import { LanguageSwitcher } from './LanguageSwitcher';
-import { Home, Menu } from 'lucide-react';
+import { Home } from 'lucide-react';
 import { Button } from './ui/button';
 import SpHeader from './SpHeader';
 
