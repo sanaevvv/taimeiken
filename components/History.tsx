@@ -10,14 +10,14 @@ const History = () => {
           width={420}
           height={550}
           alt="たいめいけんの外観"
-          className="absolute md:w-[36%] aspect-[3/4] z-10 filter brightness-50 md:brightness-100 object-cover h-[470px]"
+          className="absolute md:w-[36%] aspect-[3/4] z-10 filter brightness-100 object-cover h-[470px]"
         />
         <Image
           src="/exterior.JPG"
           width={420}
           height={550}
           alt="たいめいけんの外観"
-          className="hidden md:block absolute w-full md:w-[36%] aspect-[3/4] -left-[50px] -mt-5 -rotate-12 blur-[7px] filter brightness-90 object-cover md:h-[470px]"
+          className="hidden md:block absolute w-full md:w-[36%] aspect-[3/4] -left-[50px] -mt-5 -rotate-12 blur-[7px] filter brightness-75 object-cover md:h-[470px]"
         />
         <div className="px-4 pt-20 text-white max-w-[550px] md:w-[60%] absolute bottom-0 right-0 z-30 -top-[150px] md:-top-[100px] lg:-top-[50px]">
           <div className="flex gap-2">

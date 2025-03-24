@@ -42,24 +42,28 @@ const MenuAccordion = ({ desc, list }: Props) => {
       <div className="mb-6 max-w-[1200px] mx-auto">
         <p className="my-4 sm:w-[600px] text-justify">{desc}</p>
 
-        <div
-          className="md:flex md:gap-8 justify-center items-center"
-        >
+        <div className="md:flex md:gap-8 justify-center items-center">
           <div className="hidden lg:flex flex-col gap-6 w-[400px] justify-center">
-            <Image
-              src="/beef-potato.jpeg"
-              alt="beefのスライスとポテト"
-              width={350}
-              height={300}
-              className="w-[350px] aspect-[4/3] rounded-[10px]"
-            />
-            <Image
-              src="/beef.jpeg"
-              alt="beefのスライスとポテト"
-              width={350}
-              height={300}
-              className="w-[350px] aspect-[4/3] rounded-[10px]"
-            />
+            <div className="overflow-hidden rounded-[10px]">
+              {' '}
+              <Image
+                src="/beef-potato.jpeg"
+                alt="beefのスライスとポテト"
+                width={350}
+                height={300}
+                className="scale-[1.5] object-cover aspect-[4/3]"
+              />
+            </div>
+
+            <div className="overflow-hidden rounded-[10px]">
+              <Image
+                src="/beef.jpeg"
+                alt="beefのスライスとポテト"
+                width={350}
+                height={300}
+                className="scale-[1.5] object-cover aspect-[4/3]"
+              />
+            </div>
           </div>
           <Accordion
             type="single"
@@ -115,23 +119,26 @@ const MenuAccordion = ({ desc, list }: Props) => {
             ))}
           </Accordion>
           <div className="hidden md:flex flex-col  gap-6 w-[400px] justify-center items-center">
-            <Image
-              src="/shrink.png"
-              alt="エビフライの盛り合わせ"
-              width={350}
-              height={300}
-              className="w-[350px] aspect-[4/3] rounded-[10px]"
-            />
-            <Image
-              src="/omuraise.jpeg"
-              alt="エビフライの盛り合わせ"
-              width={350}
-              height={300}
-              className="object-cover w-[350px] aspect-[4/3] rounded-[10px]"
-            />
+            <div className="overflow-hidden rounded-[10px]">
+              <Image
+                src="/shrink.png"
+                alt="エビフライの盛り合わせ"
+                width={350}
+                height={300}
+                className="scale-[1.3] object-cover aspect-[4/3]"
+              />
+            </div>
+            <div className="overflow-hidden rounded-[10px]">
+              <Image
+                src="/omuraise.jpeg"
+                alt="エビフライの盛り合わせ"
+                width={350}
+                height={300}
+                className="aspect-[4/3] object-cover"
+              />
+            </div>
           </div>
         </div>
-        {/* ))} */}
       </div>
     </>
   );

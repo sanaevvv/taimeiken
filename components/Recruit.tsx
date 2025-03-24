@@ -36,7 +36,7 @@ const Recruit = () => {
           alt="Recruit"
           width={420}
           height={550}
-          className="absolute right-0 aspect-[3/4] md:w-[36%] z-10 top-[220px] md:top-[120px] filter md:brightness-[0.65] object-cover h-[350px] md:h-auto"
+          className="absolute right-0 aspect-[3/4] md:w-[36%] z-10 top-[220px] md:top-[120px] filter md:brightness-[0.7] object-cover h-[350px] md:h-auto"
         />
         <Image
           src="/exterior.png"
