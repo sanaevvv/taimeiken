@@ -10,7 +10,7 @@ const Header = () => {
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50">
-      <nav className="max-w-7xl mx-auto px-4 py-2 flex items-center gap-4 justify-end relative">
+      <nav className="max-w-7xl w-full mx-auto px-4 py-2 flex items-center gap-4 justify-end relative">
         <div className="md:hidden mr-auto">
          <SpHeader />
         </div>
