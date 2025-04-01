@@ -1,10 +1,10 @@
 import { LinkButton } from '@/components/LinkButton';
 import { Badge } from '@/components/ui/badge';
-import { Button } from '@/components/ui/button';
-import { Link } from '@/i18n/routing';
 import { getNewsDetail } from '@/lib/client';
 import { formatDate } from '@/lib/utils';
 import parse from 'html-react-parser';
+import { useParams } from 'next/navigation';
+
 
 type Props = {
   params: {
@@ -22,9 +22,10 @@ export async function generateMetadata({ params }: Props) {
 const NewsDetailsPage = async ({ params }: Props) => {
   const getNews = await getNewsDetail(params.id);
 
+
   if (getNews) {
     return (
-      <section className="container md:p-[6rem]">
+      <section className="container mx-auto md:max-w-[800px]">
         <article className="md:pl-[2rem]">
           <div className="flex items-center gap-2">
             <time className="text-gray-400 text-sm">

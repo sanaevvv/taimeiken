@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { Metadata } from 'next';
 import { formatDate } from '@/lib/utils';
 import { LinkButton } from '@/components/LinkButton';
+import { Badge } from '@/components/ui/badge';
 
 export const metadata: Metadata = {
   title: '最新情報一覧',
@@ -16,30 +17,35 @@ const NewsListPage = async () => {
 
   if (newsList && newsList.length > 0) {
     return (
-      <section className="pt-24 pb-24 container md:px-[6rem]">
-        <div className="py-6 md:px-[2rem]">
+      <section className="pt-16 md:pt-32 pb-24 container mx-auto md:max-w-[800px]">
+        <div>
           {newsList.map((news) => (
             <div key={news.id}>
-              <article className="flex gap-4 py-2">
+              <article className="py-2">
                 <Link
                   href={`/news/${news.id}`}
-                  className="flex gap-2 md:gap-4 flex-col md:flex-row"
+                  className="grid grid-cols-[max-content_1fr] md:grid-cols-[max-content_100px_1fr] gap-4 items-center pt-2"
                 >
                   <time className="text-gray-400 text-sm">
                     {formatDate(new Date(news.publishedAt))}
                   </time>
                   <div>
-                    <p className="text-gray-400 text-[13px] rounded-full border border-gray-400 max-w-[100px] px-2 text-center">
+                    <Badge
+                      variant="outline"
+                      className="rounded-full text-gray-400"
+                    >
                       {news.tag}
-                    </p>
-                    <p className="pt-2 text-sm">{news.title}</p>
+                    </Badge>
                   </div>
+                  <p className="text-sm col-span-2 md:col-span-1">
+                    {news.title}
+                  </p>
                 </Link>
               </article>
               <hr className="border-gray-400" />
             </div>
           ))}
-          <div className="flex justify-center mt-6">
+          <div className="flex justify-center mt-12">
             <LinkButton href="/" text="トップページへ見る" />
           </div>
         </div>

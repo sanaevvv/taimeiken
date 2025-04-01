@@ -19,7 +19,7 @@ const Hero = () => {
       />
 
       <div className="max-w-[1200px] mx-auto relative w-full h-[300px] sm:h-auto sm:aspect-[16/9]">
-        <div className="absolute top-[50px] left-0 lg:left-[10%] h-full sm:top-[80px] md:top-0 lg:grid md:place-content-center w-[60vw] sm:w-[63vw] md:w-[450px] lg:w-[500px] z-50 px-4">
+        <div className="absolute top-[50px] left-0 lg:left-[5%] h-full sm:top-[80px] md:top-0 lg:grid md:place-content-center w-[60vw] sm:w-[63vw] md:w-[450px] lg:w-[500px] z-50 px-4">
           <Image
             src="/logo3.png"
             alt="たいめいけんのlogo"

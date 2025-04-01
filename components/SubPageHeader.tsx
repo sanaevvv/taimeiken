@@ -1,8 +1,8 @@
 import Image from 'next/image';
 const SubPageHeader = ({ src, title }: { src: string; title: string }) => {
   return (
-    <div className="flex flex-row gap-4 max-w-7xl">
-      <h1 className="text-white text-7xl font-bold w-[40vw] py-36 pl-36 font-open-sans tracking-wide">
+    <div className="flex flex-row gap-4 max-w-7xl mx-auto w-full h-[350px] relative">
+      <h1 className="text-gray-300 md:text-gray-400 text-5xl sm:text-7xl font-bold py-40 md:py-44 md:pl-36 font-open-sans tracking-wide absolute top-0 left-0 z-10 text-center w-full md:text-left">
         {title}
       </h1>
       <div>
@@ -11,7 +11,7 @@ const SubPageHeader = ({ src, title }: { src: string; title: string }) => {
           alt={title}
           width={600}
           height={300}
-          className="absolute object-cover right-0 top-0 aspect-[16/6] w-[60vw] object-top"
+          className="absolute object-cover right-0 top-0 md:top-[50px] h-[350px] object-top filter brightness-[0.8]"
         />
       </div>
     </div>
