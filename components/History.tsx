@@ -3,7 +3,7 @@ import { Button } from './ui/button';
 
 const History = () => {
   return (
-    <div className="relative max-w-[1200px] mx-auto">
+    <div className="relative max-w-[1200px] mx-auto mt-20">
       <Image
         src="/bg-white.jpg"
         alt="背景"
@@ -35,19 +35,9 @@ const History = () => {
               />
             </div>
             <div className="relative z-20 h-full flex flex-col justify-center px-24">
-              <div className="mb-8 py-1 bg-gradient-to-r from-black/100 to-black/70 backdrop-blur-3xl relative">
-                <Image
-                  src="/light.gif"
-                  alt="light"
-                  width={70}
-                  height={50}
-                  unoptimized
-                  className="filter brightness-[1.4] absolute top-0 bottom-0 h-full object-cover left-[5%]"
-                />
-                <h2 className="text-4xl sm:text-5xl lg:text-6xl py-2 tracking-[0.1em] text-white relative px-4 font-playfairDisplay font-[700] drop-shadow-lg text-center pl-8">
-                  History
-                </h2>
-              </div>
+              <h2 className="absolute top-[50px] left-[24] text-4xl sm:text-5xl lg:text-6xl py-2 tracking-wide text-[#344156] font-playfairDisplay font-[800] drop-shadow-lg">
+                History
+              </h2>
 
               <div className="relative z-20">
                 <p className="text-black text-justify">
@@ -55,7 +45,7 @@ const History = () => {
                   1948年（昭和23年）には日本橋に移転し、「たいめいけん」と改称。以降、洋食文化を代表する存在として多くの人々に愛され続けています。特に「タンポポオムライス」の発祥店として知られ、半熟オムレツをナイフで開くと卵が広がるその独特なスタイルが人気を集めています。1951年には株式会社化し、1973年には6階建てのビルが完成。その後、1977年には「凧の博物館」を館内に開設するなど、文化的な活動も展開しています。
                 </p>
                 <div className="mt-6">
-                  <Button className="rounded-sm font-bold">
+                  <Button className="font-bold">
                     会社概要はこちら
                   </Button>
                 </div>

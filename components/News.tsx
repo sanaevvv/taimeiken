@@ -50,13 +50,13 @@ const News = async () => {
         />
       </div>
       <div className="absolute inset-0 px-4 md:px-6 lg:pl-[35vw] py-10 lg:pb-20">
-        <h2 className="text-xl sm:text-2xl font-bold lg:pb-4 font-montserrat">
+        <h2 className="text-xl sm:text-2xl font-bold lg:pb-4 font-montserrat text-[#344156]">
           News
         </h2>
 
         {news}
 
-        <Button className="mt-6 rounded-sm font-bold" asChild>
+        <Button className="mt-6 font-bold" asChild>
           <Link href="/news">もっと読む</Link>
         </Button>
       </div>
@@ -77,6 +77,15 @@ const News = async () => {
             className="filter brightness-[0.1] opacity-90"
           />
         </div>
+      </div>
+      <div>
+        <Image
+          src="/interior.jpg"
+          alt="interior"
+          width={600}
+          height={300}
+          className="absolute object-cover w-[47vw] lg:w-[28vw] aspect-[4/3] right-0 -top-[30vh] sm:top-[240px] max-w-[500px]"
+        />
       </div>
     </section>
   );
