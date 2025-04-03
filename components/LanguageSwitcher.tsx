@@ -53,7 +53,7 @@ export const LanguageSwitcher = () => {
   return (
     <DropdownMenu modal={false}>
       <DropdownMenuTrigger>
-        <div className="flex items-center gap-2 text-white px-2">
+        <div className="flex items-center gap-2 px-2">
           <span className="text-xl">
             {currentLanguage.flag ?? <Globe className="h-4 w-4" />}
           </span>
@@ -88,50 +88,5 @@ export const LanguageSwitcher = () => {
         ))}
       </DropdownMenuContent>
     </DropdownMenu>
-    // <NavigationMenu className={className}>
-    //   <NavigationMenuList>
-    //     <NavigationMenuItem>
-    //       <NavigationMenuTrigger className="text-white text-sm">
-    //         {/* {t('toggle')} */}
-
-    //         言語を選択してください
-    //       </NavigationMenuTrigger>
-    //       <NavigationMenuContent>
-    //         {routing.locales.map((loc) => (
-    //           <NavigationMenuLink asChild key={loc} className="flex flex-col">
-    //             <Button
-    //               variant="ghost"
-    //               className="text-white"
-    //               disabled={loc === locale}
-    //               onClick={() => router.push(`/${loc}`)}
-    //             >
-    //               {loc}
-    //             </Button>
-    //           </NavigationMenuLink>
-    //         ))}
-    //       </NavigationMenuContent>
-    //     </NavigationMenuItem>
-    //   </NavigationMenuList>
-    // </NavigationMenu>
-
-    // <DropdownMenu>
-    //   <DropdownMenuTrigger asChild>
-    //     <Button variant="ghost" className="text-white">
-    //       {t('toggle')}
-    //     </Button>
-    //   </DropdownMenuTrigger>
-    //   <DropdownMenuContent>
-    //     <DropdownMenuLabel>{t('current', { locale })}</DropdownMenuLabel>
-    //     {routing.locales.map((loc) => (
-    //       <DropdownMenuItem
-    //         disabled={loc === locale}
-    //         key={loc}
-    //         onClick={() => router.push(`/${loc}`)}
-    //       >
-    //         {loc}
-    //       </DropdownMenuItem>
-    //     ))}
-    //   </DropdownMenuContent>
-    // </DropdownMenu>
   );
 };

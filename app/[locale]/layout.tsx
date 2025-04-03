@@ -2,7 +2,7 @@ import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import { routing } from '@/i18n/routing';
-import { Noto_Sans_JP, Inter, Open_Sans, Montserrat } from 'next/font/google';
+import { Noto_Sans_JP, Inter, Open_Sans, Montserrat, Playfair_Display } from 'next/font/google';
 import Footer from '@/components/Footer';
 import Header from '@/components/Header';
 
@@ -18,6 +18,11 @@ const notoSansJP = Noto_Sans_JP({
   display: 'swap',
 });
 
+const playfairDisplay = Playfair_Display({
+  subsets: ['latin'],
+  weight: ['400', '500', '600', '700'],
+  display: 'swap',
+});
 export default async function LocaleLayout({
   children,
   params,
@@ -37,14 +42,14 @@ export default async function LocaleLayout({
 
   return (
     <html lang={locale} className="h-full scroll-smooth">
-      <body className={`${montserrat.className} ${notoSansJP.className} `}>
-        <NextIntlClientProvider messages={messages}>
-          <div className="bg-black text-white flex flex-col min-h-screen">
-            <Header />
-            <main className="flex-1">{children}</main>
-            <Footer />
-          </div>
-        </NextIntlClientProvider>
+      <body className={`${notoSansJP.className}${montserrat.className}`}>
+          <NextIntlClientProvider messages={messages}>
+            <div className="flex flex-col min-h-screen">
+              <Header />
+              <main className="flex-1">{children}</main>
+              <Footer />
+            </div>
+          </NextIntlClientProvider>
       </body>
     </html>
   );

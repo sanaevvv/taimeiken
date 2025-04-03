@@ -2,7 +2,7 @@ import Image from 'next/image';
 const SubPageHeader = ({ src, title }: { src: string; title: string }) => {
   return (
     <div className="flex flex-row gap-4 max-w-7xl mx-auto w-full h-[350px] relative">
-      <h1 className="text-gray-300 md:text-gray-400 text-5xl sm:text-7xl font-bold py-40 md:py-44 md:pl-36 font-open-sans tracking-wide absolute top-0 left-0 z-10 text-center w-full md:text-left">
+      <h1 className=" md:text-gray-400 text-5xl sm:text-7xl font-bold py-40 md:py-44 md:pl-36 font-open-sans tracking-wide absolute top-0 left-0 z-10 text-center w-full md:text-left">
         {title}
       </h1>
       <div>

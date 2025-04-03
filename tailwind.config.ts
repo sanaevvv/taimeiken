@@ -12,6 +12,7 @@ const config: Config = {
       fontFamily: {
         notoSansJP: ['var(--font-noto-sans-jp)'],
         montserrat: ['var(--font-montserrat)'],
+        playfairDisplay: ['var(--font-playfair-display)'],
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',

@@ -31,35 +31,38 @@ const News = async () => {
     </Link>
   ));
   return (
-    <section className="relative h-[20vh]">
-      <div className="relative">
+    <section className="relative h-[20vh] mt-20">
+      <div className="relative w-full h-[300px]">
+        <Image
+          src="/bg-white.jpg"
+          fill
+          alt="Newsセクションの白色背景"
+          className="inset-0 object-cover"
+        />
+      </div>
+      <div>
         <Image
           src="/beef.png"
           alt="beef"
           width={600}
           height={300}
-          className="absolute w-[47vw] lg:w-[28vw] top-[250px] lg:top-[10vh] max-w-[500px] left-0 object-cover aspect-[4/3] z-10 border border-black"
+          className="absolute w-[47vw] lg:w-[28vw] top-[250px] max-w-[500px] left-0 lg:-top-[50px] object-cover aspect-[4/3] z-10"
         />
-        <div className="absolute w-[47vw] lg:w-[28vw] top-[250px] lg:top-[10vh] left-0 object-cover aspect-[4/3] bg-[radial-gradient(ellipse,_rgba(0,0,0,0)_40%,_black_100%)] z-30 max-w-[500px] "></div>
       </div>
-      <div className="px-4 md:px-6 lg:pl-[35vw] text-white py-10 lg:pb-20">
+      <div className="absolute inset-0 px-4 md:px-6 lg:pl-[35vw] py-10 lg:pb-20">
         <h2 className="text-xl sm:text-2xl font-bold lg:pb-4 font-montserrat">
           News
         </h2>
 
         {news}
 
-        <Button
-          variant="secondary"
-          className="mt-6 rounded-sm font-bold"
-          asChild
-        >
+        <Button className="mt-6 rounded-sm font-bold" asChild>
           <Link href="/news">もっと読む</Link>
         </Button>
       </div>
       <div className="relative hidden lg:block">
         <SpinningText
-          className="mt-[10vh]"
+          className="mt-32 font-montserrat font-semibold"
           duration={8}
           radius={6}
         >
@@ -69,8 +72,9 @@ const News = async () => {
           <Image
             src="/logo-icon.png"
             alt="logo"
-            width={100}
-            height={100}
+            width={110}
+            height={110}
+            className="filter brightness-[0.1] opacity-90"
           />
         </div>
       </div>

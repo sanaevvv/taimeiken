@@ -5,7 +5,7 @@ export default function Home() {
     <main>
       <Hero />
 
-      <div className="bg-black h-32 w-full mt-[100vh]">News</div>
+      <div className="bg-black font-playfairDisplay h-32 w-full mt-[100vh]">News</div>
     </main>
   );
 }
