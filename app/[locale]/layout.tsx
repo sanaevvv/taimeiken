@@ -44,11 +44,11 @@ export default async function LocaleLayout({
     <html lang={locale} className="h-full scroll-smooth">
       <body className={`${notoSansJP.className}${montserrat.className}`}>
           <NextIntlClientProvider messages={messages}>
-            <div className="flex flex-col min-h-screen">
+            {/* <div className="flex flex-col min-h-screen"> */}
               <Header />
-              <main className="flex-1">{children}</main>
+              <main>{children}</main>
               <Footer />
-            </div>
+            {/* </div> */}
           </NextIntlClientProvider>
       </body>
     </html>

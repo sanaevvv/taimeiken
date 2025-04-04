@@ -5,22 +5,29 @@ import { LinkButton } from './LinkButton';
 const Menu = () => {
   return (
     <section className="relative pb-36" id="menu">
-      {/* <Image
-        src="/bg-gray.png"
-        fill
-        className="object-cover top-[100px] bottom-[-100px] filter brightness-[1.4]"
-        alt="menu-bg"
-      /> */}
-
-      <div className="absolute inset-0 bg-[#6A8A82]  bottom-[-200px]"></div>
+      <div className="absolute inset-0 bg-[#6A8A82] bottom-[-200px]"></div>
+      <div className="absolute inset-0 bottom-[-200px] bg-[url('/20250403-043835.png')] bg-repeat opacity-10"></div>
+      <div className="max-w-[1300px] mx-auto relative">
+        <Image
+          alt="menu-bg"
+          width={240}
+          height={200}
+          className="absolute top-[-50px] left-0 object-cover"
+          src="/flower.png"
+        />
+      </div>
 
       <div className="max-w-[1200px] w-full mx-auto relative">
-        <div className="relative h-[300px] w-full my-[450px]">
-        </div>
+        <div className="relative h-[300px] w-full py-[100px] pb-[700px]"></div>
         <h2 className="absolute top-[50px] text-4xl sm:text-5xl lg:text-6xl py-2 tracking-wide text-[#ece8d9] text-center w-full font-playfairDisplay font-[800] drop-shadow-2xl">
           Chef&apos;s Recommendations
         </h2>
-        <div className="absolute top-[130px] left-0 right-0">
+        <p className="text-center text-2xl text-[#ece8d9] absolute top-[140px] inset-0">
+          時代を超えて愛される味わい
+          <br />
+          極上の一皿をあなたにお届けします
+        </p>
+        <div className="absolute top-[180px] left-0 right-0">
           <div className="relative h-[900px] w-[90%] mx-auto">
             <div className="grid grid-cols-4 grid-rows-3 gap-4 justify-center pt-16 pb-28">
               <div className="col-span-1 row-span-1 relative h-[180px]">
@@ -81,11 +88,7 @@ const Menu = () => {
             </div>
           </div>
         </div>
-        {/* <div>
-            <MenuTabs />
-          </div> */}
       </div>
-      {/* </div> */}
     </section>
   );
 };
