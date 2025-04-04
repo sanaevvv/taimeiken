@@ -42,16 +42,16 @@ const News = async () => {
         />
       </div> */}
 
-      <div className="max-w-[800px] w-full mx-auto flex px-4 my-10 relative">
-        <div className="absolute inset-0 w-full h-[300px] -z-10">
-        <Image
-          src="/bg-white.jpg"
-          fill
-          alt="Newsセクションの白色背景"
-          className="object-cover"
-        />
-      </div>
-        <div className="relative hidden lg:block w-[260px]">
+      <div className="max-w-[900px] w-full mx-auto flex px-4 my-10 relative">
+        <div className="absolute inset-0 -z-10">
+          <Image
+            src="/bg-white.jpg"
+            fill
+            alt="Newsセクションの白色背景"
+            className="object-cover"
+          />
+        </div>
+        <div className="relative hidden lg:block w-[300px]">
           <SpinningText
             className="font-montserrat font-semibold absolute inset-0 flex items-center text-gray-700 justify-center"
             duration={8}
@@ -70,7 +70,7 @@ const News = async () => {
           </div>
         </div>
 
-        <div className="px-4 md:px-6 py-10">
+        <div className="px-4 md:px-6 py-10 w-[calc(100%-300px)]">
           <h2 className="text-xl sm:text-2xl font-bold lg:pb-4 font-montserrat text-[#344156]">
             News
           </h2>
