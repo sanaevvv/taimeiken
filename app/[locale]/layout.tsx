@@ -43,13 +43,13 @@ export default async function LocaleLayout({
   return (
     <html lang={locale} className="h-full scroll-smooth">
       <body className={`${notoSansJP.className}${montserrat.className}`}>
-          <NextIntlClientProvider messages={messages}>
-            {/* <div className="flex flex-col min-h-screen"> */}
-              <Header />
-              <main>{children}</main>
-              <Footer />
-            {/* </div> */}
-          </NextIntlClientProvider>
+        <NextIntlClientProvider messages={messages}>
+          {/* <div className="flex flex-col min-h-screen"> */}
+          <Header />
+          <main>{children}</main>
+          <Footer />
+          {/* </div> */}
+        </NextIntlClientProvider>
       </body>
     </html>
   );

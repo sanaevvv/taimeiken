@@ -13,7 +13,7 @@ export default function HomePage() {
       <Menu />
       <History />
       <Recruit />
-      {/* <LastSection /> */}
+      <LastSection />
     </>
   );
 }

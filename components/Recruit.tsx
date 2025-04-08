@@ -24,7 +24,7 @@ const Recruit = () => {
       </div>
       <div className="max-w-[1200px] mx-auto py-6 relative h-[600px]">
         <div className="px-12 lg:w-[550px] max-w-[550px] md:w-[60%] relative z-20 mt-20">
-          <h2 className="absolute top-0 text-4xl sm:text-5xl lg:text-6xl py-2 tracking-wide text-[#344156] font-playfairDisplay font-[800] drop-shadow-lg">
+          <h2 className="absolute top-0 text-4xl sm:text-5xl lg:text-6xl py-2 tracking-wide text-[#344156] font-playfairDisplay font-[800]">
             Recruit
           </h2>
 

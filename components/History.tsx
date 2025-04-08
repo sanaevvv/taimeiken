@@ -35,7 +35,7 @@ const History = () => {
               />
             </div>
             <div className="relative z-20 h-full flex flex-col justify-center px-24">
-              <h2 className="absolute top-[50px] left-[24] text-4xl sm:text-5xl lg:text-6xl py-2 tracking-wide text-[#344156] font-playfairDisplay font-[800] drop-shadow-lg">
+              <h2 className="absolute top-[50px] left-[24] text-4xl sm:text-5xl lg:text-6xl py-2 tracking-wide text-[#344156] font-playfairDisplay font-[800]">
                 History
               </h2>
 

@@ -7,6 +7,7 @@ const Menu = () => {
     <section className="relative pb-36" id="menu">
       <div className="absolute inset-0 bg-[#6A8A82] bottom-[-200px]"></div>
       <div className="absolute inset-0 bottom-[-200px] bg-[url('/20250403-043835.png')] bg-repeat opacity-10"></div>
+
       <div className="max-w-[1300px] mx-auto relative">
         <Image
           alt="menu-bg"

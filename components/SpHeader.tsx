@@ -69,16 +69,6 @@ const SpHeader = () => {
           <li>
             <Button variant="link" asChild>
               <Link
-                href="/license"
-                className="text-white group-hover:opacity-30 hover:!opacity-100 transition-all duration-500 ease-in-out"
-              >
-                {t('license')}
-              </Link>
-            </Button>
-          </li>
-          <li>
-            <Button variant="link" asChild>
-              <Link
                 href="/news"
                 className="text-white group-hover:opacity-30 hover:!opacity-100 transition-all duration-500 ease-in-out"
               >
